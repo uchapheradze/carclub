@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation-ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration-line: none;
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 25px;
+    color: white;
+    transition: 0.7s;
+    animation: grow 0.7s;
+    font-family: "Arial GEO BoldItalic", sans-serif;
+}
+
+.text:hover {
+    color: grey;
+}
+
+.siaxleebi{
+    font-size: 25px;
+    color: white;
+    transition: 0.7s;
+    animation: main 1s infinite;
+    font-family: "ALK Rounded Mtav Med", sans-serif;
+}
+
+@keyframes main {
+    50% { color: grey;}
+    100% { color: white;}
+}
+
+@keyframes grow {
+    0% { color: black;}
+    50% { color: whte; font-size: 30px;}
+    100% { color: white; font-size: 25px;}
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.info {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 200px;
+    animation: grown 1s infinite;
+    font-family: 'Paytone One', sans-serif;
+}
+
+@keyframes grown {
+    0% { color: black; font-size: 100px;}
+    50% { color: red; font-size: 120px;}
+    100% { color: black; font-size: 100px;}
+}
